@@ -9,14 +9,16 @@ Account::~Account()
 {
 }
 
-void Account::deposit(int numberOfPennies)
+void Account::Deposit(int numberOfPennies)
 {
 	_balanceInPennies += numberOfPennies;
+	//TODO: Add a message to the log
 }
 
-void Account::withdraw(int numberOfPennies)
+void Account::Withdraw(int numberOfPennies)
 {
 	_balanceInPennies -= numberOfPennies;
+	//TODO: Add a message to the log
 }
 
 int Account::getBalance()

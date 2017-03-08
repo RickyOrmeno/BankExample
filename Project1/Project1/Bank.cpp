@@ -25,6 +25,7 @@ std::string Bank::ShowAccounts()
 	std::string output = "Accounts for " + _name + "\n";
 	for (auto account : _accounts)	//search
 	{
+		//TODO: Display as Account Number - LastName, FirstName - Balance
 		output += std::to_string(account.getAccountNumber()) += "\n";
 	}
 	return output;
