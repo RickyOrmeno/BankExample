@@ -1,3 +1,5 @@
-﻿  MainBank.cpp
-  Project1.vcxproj -> C:\Users\ncc\Documents\Visual Studio 2015\Projects\BankExample\Project1\Debug\Project1.exe
-  Project1.vcxproj -> C:\Users\ncc\Documents\Visual Studio 2015\Projects\BankExample\Project1\Debug\Project1.pdb (Partial PDB)
+﻿  Bank.cpp
+c:\users\ncc\documents\visual studio 2015\projects\bankexample\project1\project1\bank.cpp(51): error C2039: 'Deposit': is not a member of 'Account'
+  c:\users\ncc\documents\visual studio 2015\projects\bankexample\project1\project1\account.h(5): note: see declaration of 'Account'
+c:\users\ncc\documents\visual studio 2015\projects\bankexample\project1\project1\bank.cpp(63): error C2039: 'Withdraw': is not a member of 'Account'
+  c:\users\ncc\documents\visual studio 2015\projects\bankexample\project1\project1\account.h(5): note: see declaration of 'Account'

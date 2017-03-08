@@ -1,8 +1,7 @@
 #include "Account.h"
 
-Account::Account(Customer customer, int accountNumber)
+Account::Account(Customer customer, int accountNumber) : _accountOwner(customer) //DO THIS INLINE TO DEFINE CLASSES TO ELIMINATE DEFAULT CONSTRUCTOR ERRORS
 {
-	_accountOwner = customer;
 	_accountNumber = accountNumber;
 }
 
@@ -24,3 +23,9 @@ int Account::getBalance()
 {
 	return 0;
 }
+
+int Account::getAccountNumber()
+{
+	return _accountNumber;
+}
+
