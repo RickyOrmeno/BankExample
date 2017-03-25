@@ -80,7 +80,6 @@ void TransactMenu()
 
 	cout << "Which Account?" << endl;
 	cout << bank.ListAccounts() << endl;
-	system("cls");
 
 	int chosenAccount;
 	cin >> chosenAccount;
@@ -88,22 +87,32 @@ void TransactMenu()
 	system("cls");
 	cout << "1) Deposit" << endl;
 	cout << "2) Withdraw" << endl;
+	cout << "3) Transaction Log" << endl;
 
 	int transactionType;
 	cin >> transactionType;
 
-	system("cls");
-	cout << "How many Pennies? ";
-	int pennies;
-	cin >> pennies;
 
 	switch (transactionType)
 	{
-	case 1: bank.Deposit(chosenAccount, pennies); break;
-	case 2: bank.Withdraw(chosenAccount, pennies); break;
+	case 1: system("cls");
+			cout << "How many Pennies? ";
+			int pennies;
+			cin >> pennies;
+			bank.Deposit(chosenAccount, pennies); break;
+
+	case 2: system("cls");
+			cout << "How many Pennies? ";
+			cin >> pennies;
+			bank.Withdraw(chosenAccount, pennies); break;
+	case 3: system("cls");
+		cout << "Here is this accounts transaction history." << endl;
+			//add log transactions
+			break;
 	default: break;
 
 	}
+
 
 
 }

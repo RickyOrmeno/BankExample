@@ -19,7 +19,7 @@ public:
 	int getBalance();
 	int getAccountNumber();
 
-
+	std::string showLog();
 
 };
 

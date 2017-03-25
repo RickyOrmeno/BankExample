@@ -12,13 +12,14 @@ Account::~Account()
 void Account::Deposit(int numberOfPennies)
 {
 	_balanceInPennies += numberOfPennies;
+	_log.push_back("You added " + std::to_string(numberOfPennies) + "to your account.");
 	//TODO: Add a message to the log
 }
 
 void Account::Withdraw(int numberOfPennies)
 {
 	_balanceInPennies -= numberOfPennies;
-	//TODO: Add a message to the log
+	_log.push_back("You withdrew " + std::to_string(numberOfPennies) + "from your account.");
 }
 
 int Account::getBalance()
@@ -29,5 +30,13 @@ int Account::getBalance()
 int Account::getAccountNumber()
 {
 	return _accountNumber;
+}
+
+std::string Account::showLog()
+{
+	for (auto message : _log)
+	{
+		return message;
+	};
 }
 
